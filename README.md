@@ -8,7 +8,7 @@
 
 This work presents **EchoCare**,  novel ultrasound foundation model for generalist clinical use, developed via self-supervised learning on our curated, publicly available, large-scale unlabeled dataset EchoCareData. EchoCareData comprises **4.5 million** ultrasound images, sourced from 23 clinical centers across 5 continents, and acquired using 38 distinct imaging devices, thus encompassing multi-center, multi-device, and multi-ethnic global cohorts.
 
-![teaser](img/logo.png)
+![EchoCare](img/logo.png)
 
 ## Quick Start
 
