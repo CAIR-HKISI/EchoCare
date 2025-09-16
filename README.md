@@ -34,21 +34,17 @@ This work presents **EchoCare**,  novel ultrasound foundation model for generali
 
 ## Public Medical Dataset
 
-If you want to introduce or know more dataset, you are welcome to submit an issue or PR in this repo.
+EchoCareData covers 9 major regions and 52 anatomical organs of the human body, supporting models pretrained on it to generalize effectively across comprehensive whole-body ultrasound clinical application.
 
-- [Imaging](#Imaging)
-  - [Whole Body (10)](#whole-body)
-  - [Head and Neck (55)](#head-and-neck)
-  - [Chest (43)](#chest)
-  - [Abdomen (53)](#abdomen)
-  - [Heart (14)](#heart)
-  - [Bones (15)](#bones)
-  - [Endoscopy (33)](#endoscopy)
-  - [Retina (52)](#retina)
-  - [Skin (14)](#skin)
-  - [Microscopic imaging (38)](#microscopic-imaging)
-- [Imaging and Text (34)](#Image-text-dataset)
-- [Text (18)](#Text-dataset)
+- [Abdomen](#Abdomen)
+- [Back](#Back)  
+- [Fetus](#Fetus)  
+- [Head&Neck](#Head&Neck)  
+- [Lower limb](#Lower-limb)  
+- [Other](#Other)  
+- [Pelvis](#Pelvis)  
+- [Thorax](#Thorax)  
+- [Upper limb](#Upper-limb)  
 
 ## Dataset Platforms
 
