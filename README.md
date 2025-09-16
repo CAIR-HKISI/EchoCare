@@ -14,7 +14,6 @@ This work presents **EchoCare**,  novel ultrasound foundation model for generali
 
 - **EchoCareData**:
   - [Public Medical Dataset](#Public-Medical-Dataset)
-  - [Other EchoCare Collection Projects](#Other-EchoCare-Collection-Projects)
   - [Dataset Platforms](#Dataset-Platforms)
 - **Models**:
   - [Evaluation Benchmark](#Evaluation-Benchmark)
@@ -53,13 +52,11 @@ If you want to introduce or know more dataset, you are welcome to submit an issu
 
 ## Dataset Platforms
 
-You can search for more medical datasets not included in this project on these websites:
+Our data curation process commenced with a systematic search of open academic repositories：
 
-- [Grand Challenges](https://grand-challenge.org/challenges/): A platform for end-to-end development of machine learning solutions in biomedical imaging.
-- [Kaggle](https://www.kaggle.com/datasets): One of the largest AI & ML community.
-- [TCIA](https://www.cancerimagingarchive.net/access-data/): A service which de-identifies and hosts a large archive of medical images of cancer accessible for public download.
-- [Synapse](https://www.synapse.org/): A platform for supporting scientific collaborations centered around shared biomedical data sets.
-- [Medical Segmentation Decathlon](http://medicaldecathlon.com/): The MSD challenge tests the generalisability of machine learning algorithms when applied to 10 different semantic segmentation tasks.
-- [CodaLab](https://codalab.lisn.upsaclay.fr/): An open-source web-based platform that enables researchers, developers, and data scientists to collaborate, with the goal of advancing research fields where machine learning and advanced computation is used.
-- [Tianchi (Chinese)](https://tianchi.aliyun.com/dataset): Tianchi is a developer competition platform under Alibaba Cloud.
-- [OpenDataLab (Chinese)](https://opendatalab.com/): China Big Model Corpus Data Alliance open source data service designated platform, provides high-quality open data sets for large models.
+- [Figshare](https://figshare.com/): An online repository where researchers can share, manage, and showcase research outputs with DOIs for citation.  
+- [Github](https://github.com/): The world's leading platform for hosting and collaborating on code projects.  
+- [Grand-challenge](https://grand-challenge.org/): A platform for hosting medical imaging challenges and datasets.  
+- [Kaggle](https://www.kaggle.com/datasets): One of the largest AI & ML community.  
+- [Mendeley](https://www.mendeley.com/): A reference manager and academic social network for researchers.  
+- [Zenodo](https://zenodo.org/): An open-access repository for research outputs and datasets.  
