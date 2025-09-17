@@ -6,13 +6,13 @@
 <a href='https://echocare.cares-copilot.com/'><img src='https://img.shields.io/badge/Homepage-EchoCare-green' alt='Homepage'></a>
 </div>
 
-This work presents **EchoCare**,  novel ultrasound foundation model for generalist clinical use, developed via self-supervised learning on our curated, publicly available, large-scale unlabeled dataset EchoCareData. EchoCareData comprises **4.5 million** ultrasound images, sourced from 23 clinical centers across 5 continents, and acquired using 38 distinct imaging devices, thus encompassing multi-center, multi-device, and multi-ethnic global cohorts.
+This work presents **EchoCare**,  novel ultrasound foundation model for generalist clinical use, developed via self-supervised learning on our curated, publicly available, large-scale unlabeled dataset EchoAtlas. EchoAtlas comprises **4.5 million** ultrasound images, sourced from 23 clinical centers across 5 continents, and acquired using 38 distinct imaging devices, thus encompassing multi-center, multi-device, and multi-ethnic global cohorts.
 
 ![EchoCare](img/logo.png)
 
 ## Quick Start
 
-- **EchoCareData**:
+- **EchoAtlas**:
   - [Public Medical Dataset](#Public-Medical-Dataset)
   - [Dataset Platforms](#Dataset-Platforms)
 - **Models**:
@@ -34,7 +34,7 @@ This work presents **EchoCare**,  novel ultrasound foundation model for generali
 
 ## Public Medical Dataset
 
-EchoCareData covers 9 major regions and 52 anatomical organs of the human body, supporting models pretrained on it to generalize effectively across comprehensive whole-body ultrasound clinical application.
+EchoAtlas covers 9 major regions and 52 anatomical organs of the human body, supporting models pretrained on it to generalize effectively across comprehensive whole-body ultrasound clinical application.
 
 - [Abdomen](#Abdomen)
 - [Back](#Back)  
