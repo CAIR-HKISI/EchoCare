@@ -94,6 +94,13 @@ if args.pretrained_checkpoint is not None:
     state_dict.pop('mask_token')
     encoder.load_state_dict(state_dict, strict=True)
     print("Using pretrained self-supervised Swin Transformer backbone weights !")
+
+# Test case: forward pass with dummy input
+# Expected output feature map shapes:
+# [1, 128, 128, 128], [1, 256, 64, 64], [1, 512, 32, 32], [1, 1024, 16, 16], [1, 2048, 8, 8]
+x = torch.rand(1, 3, 256, 256)
+x_outs = encoder(x)
+print([x_out.shape for x_out in x_outs])
 ```
 
 
