@@ -16,6 +16,7 @@ This work presents **EchoCare**,  novel ultrasound foundation model for generali
   - [Public Medical Dataset](#Public-Medical-Dataset)
   - [Dataset Platforms](#Dataset-Platforms)
 - **Models**:
+  - [Usage](#Usage)
   - [Evaluation Benchmark](#Evaluation-Benchmark)
   - [Related SOTA Methods](#SOTA-Methods)
   - [Related Foundation Toolbox Projects](#Related-Foundation-Toolbox-Projects)
@@ -56,3 +57,45 @@ Our data curation process commenced with a systematic search of open academic re
 - [Kaggle](https://www.kaggle.com/datasets): One of the largest AI & ML community.  
 - [Mendeley](https://www.mendeley.com/): A reference manager and academic social network for researchers.  
 - [Zenodo](https://zenodo.org/): An open-access repository for research outputs and datasets.  
+
+
+## Usage
+
+Before training or inference, load the [pre-trained weights](https://cashkisi-my.sharepoint.com/:u:/g/personal/cares-copilot_cair-cas_org_hk/IQBgK6rK8TAtQq8IjADsgp52AbmyC03ubimwqr3qh8ZH6DI?e=ABYQzg). This gives you a well-initialized model that can be fine-tuned for your own dataset or task.
+
+```
+import torch
+import argparse
+from monai.networks.nets.swin_unetr import SwinTransformer
+
+parser = argparse.ArgumentParser(description="Swin Transformer")
+parser.add_argument("--feature_size", default=128, type=int, help="feature size")
+parser.add_argument("--in_channels", default=3, type=int, help="number of input channels")
+parser.add_argument("--pretrained_checkpoint", default=None, help="encoder pretrained checkpoint")
+parser.add_argument("--use_checkpoint", default=True, help="use gradient checkpointing to save memory")
+args = parser.parse_args()
+
+encoder = SwinTransformer(
+    in_chans=args.in_channels,
+    embed_dim=args.feature_size,
+    window_size=[8] * 2,
+    patch_size=[2] * 2,
+    depths=[2, 2, 18, 2],
+    num_heads=[4, 8, 16, 32],
+    mlp_ratio=4.0,
+    qkv_bias=True,
+    use_checkpoint=args.use_checkpoint,
+    spatial_dims=2,
+    use_v2=True)
+
+if args.pretrained_checkpoint is not None:
+    model_dict = torch.load(args.pretrained_checkpoint, map_location=torch.device('cpu'))
+    state_dict = model_dict
+    state_dict.pop('mask_token')
+    encoder.load_state_dict(state_dict, strict=True)
+    print("Using pretrained self-supervised Swin Transformer backbone weights !")
+```
+
+
+## Acknowledgement
+We thank [MONAI](https://github.com/Project-MONAI/research-contributions) for part of their codes.
